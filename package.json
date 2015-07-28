@@ -1,9 +1,9 @@
 {
-  "name": "occam-cordova-share",
+  "name": "occam-share",
   "version": "0.0.1",
   "description": "This plugin allows your application to receive share content.",
   "cordova": {
-    "id": "occam-cordova-share",
+    "id": "occam-share",
     "platforms": [
       "android"
     ]
