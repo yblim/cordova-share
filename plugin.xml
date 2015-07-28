@@ -1,0 +1,32 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.occam.cordova.share" version="0.0.1">
+    <name>
+        Occam SharePlugin
+    </name>
+    <description>
+        This Share allows your application to receive share content.
+    </description>
+    <license>
+        Apache 2.0
+    </license>
+    <keywords>cordova,occam</keywords>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SharePlugin">
+                <param name="android-package" value="com.occam.cordova.share.SharePlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:name="com.occam.cordova.share.ShareHandlerActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.SEND" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data android:mimeType="image/*" />
+                </intent-filter>
+            </activity>
+        </config-file>
+        <source-file src="src/android/com/occam/cordova/share/SharePlugin.java" target-dir="src/com/occam/cordova/share/"/>
+        <source-file src="src/android/com/occam/cordova/share/ShareHandlerActivity.java" target-dir="src/com/occam/cordova/share/"/>
+    </platform>
+</plugin>
