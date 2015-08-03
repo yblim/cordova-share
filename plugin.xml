@@ -18,15 +18,11 @@
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.occam.cordova.share.ShareHandlerActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.SEND" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <data android:mimeType="image/*" />
-                </intent-filter>
-            </activity>
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="image/*" />
+			</intent-filter>
         </config-file>
-        <source-file src="src/android/com/occam/cordova/share/SharePlugin.java" target-dir="src/com/occam/cordova/share/"/>
-        <source-file src="src/android/com/occam/cordova/share/ShareHandlerActivity.java" target-dir="src/com/occam/cordova/share/"/>
     </platform>
 </plugin>
