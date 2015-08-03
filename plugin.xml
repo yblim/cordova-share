@@ -26,7 +26,5 @@
                 </intent-filter>
             </activity>
         </config-file>
-        <source-file src="src/android/com/occam/cordova/share/SharePlugin.java" target-dir="src/com/occam/cordova/share/"/>
-        <source-file src="src/android/com/occam/cordova/share/ShareHandlerActivity.java" target-dir="src/com/occam/cordova/share/"/>
     </platform>
 </plugin>
