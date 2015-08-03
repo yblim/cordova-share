@@ -17,14 +17,12 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="CordovaApp">
-                <intent-filter>
-                    <action android:name="android.intent.action.SEND" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                    <data android:mimeType="image/*" />
-                </intent-filter>
-            </receiver>
+        <config-file target="AndroidManifest.xml" parent="/application/activity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
         </config-file>
     </platform>
 </plugin>
