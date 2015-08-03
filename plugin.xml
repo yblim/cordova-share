@@ -1,6 +1,6 @@
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.occam.cordova.share" version="0.0.1">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.cordova.share" version="0.0.1">
     <name>
-        Occam SharePlugin
+        Cordova SharePlugin
     </name>
     <description>
         This Share allows your application to receive share content.
@@ -8,7 +8,7 @@
     <license>
         Apache 2.0
     </license>
-    <keywords>cordova,occam</keywords>
+    <keywords>cordova,share</keywords>
 
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="application/activity">
