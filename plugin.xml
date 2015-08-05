@@ -10,6 +10,10 @@
     </license>
     <keywords>cordova,webintent,share</keywords>
 
+    <js-module src="www/webintent.js" name="WebIntent">
+        <clobbers target="WebIntent" />
+    </js-module>
+
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="WebIntent" >
